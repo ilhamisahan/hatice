@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Altındaki mesajla araya boşluk bırak */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.quiz-container {
+    margin-top: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.option {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 15px; /* Daha küçük boyut */
+    font-size: 0.9em; /* Küçük yazı boyutu */
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.1s, transform 0.1s;
+    width: 80%; /* Mobil için tam genişlik */
+}
+
+.option:hover {
+    background-color: lightgray;
+}
+
+.correct {
+    background-color: lightgreen !important;
+}
+
+.checking-message, .final-message, .answer-key {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5em;
+    width: 90%; /* Daha geniş göstermek için genişlik ayarı */
+}
+
+.answer-item {
+    margin: 5px 0;
+}
+
+.final-message {
+    color: white;
+    background-color: black;
+    font-size: 1em; /* Yazı boyutunu artır */
+    padding: 20px; /* Daha fazla iç boşluk ekleyin */
+    border-radius: 10px; /* Kenarları yuvarlaştırmak için */
+    text-align: left;
+}
+
+.checking-message {
+    color: white;
+}
+
+.incorrect {
+    color: red; /* Kırmızı X için */
+}
