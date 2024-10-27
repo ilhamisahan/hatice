@@ -111,6 +111,6 @@ button:hover {
     color: red; /* Kırmızı X için */
 }
 #welcomeMessage
-    {text-align:left;
+    {text-align:justify;
      font-size: 1em;
                 }
