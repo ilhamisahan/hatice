@@ -85,8 +85,8 @@ button:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 1.1em;
     width: 90%; /* Daha geniş göstermek için genişlik ayarı */
 }
 
