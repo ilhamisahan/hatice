@@ -109,7 +109,7 @@ function showAnswerKey() {
 
 function showFinalMessage() {
     const finalMessage = document.createElement('div');
-    finalMessage.innerText = "Bütün cevapların yanlış. \n\n Burada doğru veya yanlışı gerçek dünyanın aksine, geçmişten gelenler ya da aptal bile olsa çoğunluk olduğu için kabul görülenler değil, soruyu hazırlayan kişi belirliyor. \n Genel geçerliliği olan şeyler dışında görünmeyen şeyler de vardır ve benim için şimdiye kadar sorulmuş ve bundan sonra sorulacak olan bütün soruların doğru cevabı yalnızca 'sen'.";
+    finalMessage.innerText = "Bütün cevapların yanlış. \n\n Burada doğru veya yanlışı gerçek dünyanın aksine, geçmişten gelenler ya da çoğunluk olduğu için kabul görülenler değil, soruyu hazırlayan kişi belirliyor. \n Genel geçerliliği olan şeyler dışında görünmeyen şeyler de vardır ve benim için şimdiye kadar sorulmuş ve bundan sonra sorulacak olan bütün soruların doğru cevabı yalnızca 'sen'.";
     finalMessage.className = 'final-message';
     
     // Geçici bir animasyon ile ekle
