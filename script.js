@@ -16,6 +16,17 @@ let currentQuestionIndex = 0;
 document.getElementById('startButton').addEventListener('click', startQuiz);
 
 function startQuiz() {
+    // Tam ekran moduna geçiş
+    if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();
+    } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+        document.documentElement.mozRequestFullScreen();
+    } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari ve Opera
+        document.documentElement.webkitRequestFullscreen();
+    } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+        document.documentElement.msRequestFullscreen();
+    }
+
     currentQuestionIndex = 0; // Soruların sıfırlanması
     document.getElementById('welcomeMessage').style.display = 'none'; // Karşılama mesajını gizle
     document.getElementById('welcomeTitle').style.display = 'none'; // Hoş geldin başlığını gizle
